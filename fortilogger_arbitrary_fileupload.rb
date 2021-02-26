@@ -28,7 +28,7 @@ class MetasploitModule < Msf::Exploit::Remote
         'References' =>
           [
             ['CVE', '2021-3378'],
-            ['URL', 'https://erberkan.github.io']
+            ['URL', 'https://erberkan.github.io/2021/cve-2021-3378/']
           ],
 
         'Platform' => ['win'],
