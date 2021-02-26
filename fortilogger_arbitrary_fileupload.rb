@@ -43,7 +43,7 @@ class MetasploitModule < Msf::Exploit::Remote
               }
             ],
           ],
-        'DisclosureDate' => '0000-00-00', # Waiting response from vendor !
+        'DisclosureDate' => '2021-02-26',
         'DefaultTarget' => 0
       )
     )
