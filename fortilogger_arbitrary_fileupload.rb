@@ -68,8 +68,6 @@ class MetasploitModule < Msf::Exploit::Remote
         'X-Requested-With' => 'XMLHttpRequest'
       }
     )
-
-    return res
   end
 
   def check
@@ -82,7 +80,7 @@ class MetasploitModule < Msf::Exploit::Remote
           Exploit::CheckCode::Safe
         end
       end
-    rescue StandardError
+    rescue JSON::ParserError
       Exploit::CheckCode::Safe
     end
   end
