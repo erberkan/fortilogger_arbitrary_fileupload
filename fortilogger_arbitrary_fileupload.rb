@@ -82,6 +82,8 @@ class MetasploitModule < Msf::Exploit::Remote
           Exploit::CheckCode::Safe
         end
       end
+    rescue StandardError
+      Exploit::CheckCode::Safe
     end
   end
 
